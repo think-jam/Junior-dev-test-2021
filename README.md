@@ -11,6 +11,7 @@ We need the following google doc translated into the Javascript file provided
 * For each 'Layer' in the google document, there must be a case applied to the javascript in the form of another switch.
 * there may be some other adaptations you must make, please see below for an example, and glossary for some pointers
 * Lines 17-340 contains an example that holds most of the interations of the fontSize changes needed. have a read and try use this as an example
+* you can either fork this repo, clone it or create a PR, but either way let us know how you submit the result via email
 
 ### Example:
 
