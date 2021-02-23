@@ -349,21 +349,37 @@ switch (fileName) {
         addFontSize = true;
         switch (key) {
             case 'YGTK_1':
-                fontSize = 182;
+                if (textLength <= 59) {
+                    fontSize = 79;
+                }
+                else if (textLength >= 60) {
+                    fontSize = 60;
+                }
+                if(wordLength >= 12){
+                    fontSize = 85*fontSize/100;
+                }
             break;
             case 'WGDB_1':
-                fontSize = 182;
+                if (textLength <= 59) {
+                    fontSize = 79;
+                }
+                else if (textLength >= 60) {
+                    fontSize = 60;
+                }
+                if(wordLength >= 12){
+                    fontSize = 85*fontSize/100;
+                }
             break;
             case 'TOILEt GERMS':
                 fontSize = 60;
             break;
-            case 'GERM DETECTORother thick bleach':
+            case 'GERM DETECTOR':
                 fontSize = 60;
             break;
             case 'High GERM PRESENCE':
                 fontSize = 60;
             break;
-            
+
             case 'GERM COUNT 3':
                 if (textLength <= 10) {
                     fontSize = 28;
@@ -371,13 +387,12 @@ switch (fileName) {
                 else if (textLength == 11 || textLength == 12 || textLength == 13) {
                     fontSize = 23;
                 }
-                else if (textLength == 14 || textLength == 15 || textLength == 16 || textLength == 17) {
+                else if (textLength == 14 || textLength == 15 || textLength == 16) {
                     fontSize = 17;
                 }
-                else if (textLength == 18 || textLength == 19 || textLength == 20) {
-                    fontSize = 16;
+                else if (textLength >= 17) {
+                    fontSize = 28;
                 }
-                
             break;
             case 'OutroText':
                 fontSize = 41;
@@ -395,6 +410,86 @@ switch (fileName) {
             
         }
         break;
+
+
+        case 'TTOILETBLEACHLLGermKill_SQ':
+        addFontSize = true;
+        switch (key) {
+            case 'YGTK_1':
+                if (textLength <= 59) {
+                    fontSize = 79;
+                }
+                else if (textLength >= 60) {
+                    fontSize = 60;
+                }
+                if(wordLength >= 12){
+                    fontSize = 85*fontSize/100;
+                }
+            break;
+            case 'WGDB_1':
+                if (textLength <= 59) {
+                    fontSize = 79;
+                }
+                else if (textLength >= 60) {
+                    fontSize = 60;
+                }
+                if(wordLength >= 12){
+                    fontSize = 85*fontSize/100;
+                }
+            break;
+            case 'TOILEt GERMS':
+                if (textLength <= 44) {
+                    fontSize = 60;
+                } else if (textLength > 44) {
+                    fontSize = 50;
+                }
+            break;
+            case 'GERM DETECTOR':
+                if (textLength <= 44) {
+                    fontSize = 60;
+                } else if (textLength > 44) {
+                    fontSize = 50;
+                }
+            break;
+            case 'High GERM PRESENCE':
+                if (textLength <= 44) {
+                    fontSize = 60;
+                } else if (textLength > 44) {
+                    fontSize = 50;
+                }
+            break;
+            case 'GERM COUNT 3':
+                if (textLength <= 11) {
+                    fontSize = 28;
+                }
+                else if (textLength == 12|| textLength == 13) {
+                    fontSize = 23;
+                }
+                else if (textLength == 14 || textLength == 15 || textLength == 16 || textLength == 17) {
+                    fontSize = 17;
+                }
+                else if (textLength >= 18) {
+                    fontSize = 28;
+                }
+
+            break;
+            case 'OutroText':
+                fontSize = 41;
+            break;
+            case 'FOMMM':
+                fontSize = 30;
+            break;
+            case 'wwwproformulacom':
+                fontSize = 27;
+            break;
+            default: {
+                fontSize = 60;
+                break;
+            }
+
+        }
+        break;
+
 
         case '04TOILETEDITORIZZ1x1':
         addFontSize = true;
